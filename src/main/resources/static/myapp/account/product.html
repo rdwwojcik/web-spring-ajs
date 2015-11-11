@@ -1,0 +1,13 @@
+<div>
+    <div ng-repeat="product in productCtrl.products | orderBy:'price'">
+        <p>{{product.name}}</p>
+        <p>{{product.price | currency}}</p>
+        <p>{{product.desc}}</p>
+
+        <button ng-show="product.canPurchase">Add card</button>
+        <br>
+    </div>
+</div>
+
+<br>
+<p> cos tam radek</p>

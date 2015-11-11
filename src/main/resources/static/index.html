@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="MainApp" ng-controller="AppCtrl as mainCtrl">
+    <head lang="pl">
+        <title ng-bind="mainCtrl.pageTitle"></title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Radek">
+        <!--<title>Web-Spring</title>-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/pikaday.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="js/framework/angular.min.js"></script>
+        <script src="js/framework/angular-route.min.js"></script>
+        <script src="js/framework/smart-table.min.js"></script>
+        <script src="js/framework/angular-resource.js"></script>
+        <script src="js/framework/angular-moment.min.js"></script>
+        <script src="js/framework/jquery.min.js"></script>
+        <script src="js/framework/bootstrap.min.js"></script>
+        <script src="js/modules.js"></script>
+        <script src="myapp/home/home.js"></script>
+        <script src="myapp/account/product.js"></script>
+        <script src="myapp/admin/admin.js"></script>
+
+        <div>
+            <div>
+                <!--<div data-ng-bind-html="pageHtml"></div>-->
+                <div class="col-md-2 fill" id="menu" ng-include="mainCtrl.leftMenu"></div>
+                <!--<div class="col-md-2 fill" id="menu" ng-include='"menu.html"'></div>-->
+                <div class="col-md-10" ng-view></div>
+
+            </div>
+        </div>
+
+        <!--<div ng-controller = "StoreController as store">-->
+            <!--<div ng-repeat="product in store.products | orderBy:'price'">-->
+                <!--<p>{{product.name}}</p>-->
+                <!--<p>{{product.price | currency}}</p>-->
+                <!--<p>{{product.desc}}</p>-->
+
+                <!--<button ng-show="product.canPurchase">Add card</button>-->
+                <!--<br>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div data-ng-controller="PostIndexCtrl as ctrl">-->
+            <!--<p>The name is {{ctrl.posts.name}}</p>-->
+        <!--</div>-->
+
+        <!--<p>sadasdas</p>-->
+
+        <!--<div ng-controller="ResourceController as ctrl">-->
+            <!--<p>The Name is {{ctrl.greeting.name}}</p>-->
+        <!--</div>-->
+
+        <!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':8080/livereload.js?snipver=1"></' + 'script>')</script>-->
+        <script>document.write('<script src="http://' + (location.host || 'localhost:8080').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+    </body>
+</html>
