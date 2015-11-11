@@ -1,17 +1,32 @@
-<form ng-submit="accountCtrl.login()">
-    <label>Username:</label>
-    <input type="text" ng-model="account.name"/>
-    <br>
-    <label>Password:</label>
-    <input type="text" ng-model="account.password"/>
-    <br>
-    <button type="submit">Login</button>
+<br>
+<form ng-submit="accountCtrl.accountsList()">
+    <button type="submit">Get accounts</button>
 </form>
 
 <br>
-<p>test1</p>
 <br>
-<p>{{accountCtrl.wiadomosc}}</p>
+<br>
+<div ng-repeat="account in accounts_table">
+    {{account.name}}
+</div>
+
+<br>
+<p>{{informacja}}</p>
+
+<!--<form ng-submit="accountCtrl.login()">-->
+    <!--<label>Username:</label>-->
+    <!--<input type="text" ng-model="account.name"/>-->
+    <!--<br>-->
+    <!--<label>Password:</label>-->
+    <!--<input type="text" ng-model="account.password"/>-->
+    <!--<br>-->
+    <!--<button type="submit">Login</button>-->
+<!--</form>-->
+
+<!--<br>-->
+<!--<p>test1</p>-->
+<!--<br>-->
+<!--<p>{{accountCtrl.wiadomosc}}</p>-->
 
 <!--<div>-->
     <!--First Name: <input type="text" ng-model="homeCtrl.firstName" /><br/>-->
