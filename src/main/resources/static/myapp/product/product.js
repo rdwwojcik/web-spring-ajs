@@ -7,7 +7,7 @@
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.
             when('/product', {
-                templateUrl: 'myapp/account/product.html',
+                templateUrl: 'myapp/product/product.html',
                 controller: 'ProductCtrl',
                 controllerAs: 'productCtrl',
                 data: {pageTitle: 'Product'}

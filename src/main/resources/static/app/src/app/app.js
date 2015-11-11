@@ -1,13 +1,13 @@
 angular.module( 'ngBoilerplate', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
+  'ngBoilerplate.account',
   'ngBoilerplate.about',
   'ui.router'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/home' );
+  $urlRouterProvider.otherwise( '/account' );
 })
 
 .run( function run () {

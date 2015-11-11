@@ -2,15 +2,15 @@
  * Created by Radek on 07.10.2015.
  */
 (function() {
-    var app = angular.module('MainApp.home', ['ngResource']);
+    var app = angular.module('MainApp.account', ['ngResource']);
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.
-            when('/home', {
-                templateUrl: 'myapp/home/home.html',
-                controller:     'HomeCtrl',
-                controllerAs:   'homeCtrl',
-                data: {pageTitle: 'Home'}
+            when('/account', {
+                templateUrl: 'myapp/account/account.html',
+                controller:     'AccountCtrl',
+                controllerAs:   'accountCtrl',
+                data: {pageTitle: 'Account'}
             });
     }]);
 
@@ -69,7 +69,7 @@
 
     });
 
-    app.controller('HomeCtrl', function HomeController($scope, sessionService, accountService) {
+    app.controller('AccountCtrl', function HomeController($scope, sessionService, accountService) {
 
         this.wiadomosc = 'info2';
 
@@ -87,7 +87,7 @@
         };
 
         //this.login = function(){
-        //    accountService.register($scope.account,
+        //    accountService.register($scope.product,
         //        function (returnedData) {
         //            sessionService.login(returnedData);
         //        },
@@ -95,7 +95,7 @@
         //            alert("Error registering user");
         //        }
         //    );
-        //    //sessionService.login($scope.account);
+        //    //sessionService.login($scope.product);
         //};
     });
 

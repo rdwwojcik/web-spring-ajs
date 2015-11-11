@@ -6,14 +6,14 @@
         'ngResource'
         ,'ngRoute'
         ,'angularMoment'
-        ,'MainApp.home'
+        ,'MainApp.account'
         ,'MainApp.product'
         ,'MainApp.admin'
     ]);
 
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({
-            templateUrl: 'myapp/home/home.html'
+            templateUrl: 'myapp/account/account.html'
             });
     }]);
 
